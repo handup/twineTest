@@ -20,7 +20,7 @@ jobs:
         run: |
           go get github.com/tmedwards/tweego
           export PATH=$PATH:$(go env GOPATH)/bin
-          tweego escape-from-earth.tw2 -o dist/index.html
+          tweego YOUR_TWEE_FILE.twee -o dist/index.html
 
 
       - name: Deploy
